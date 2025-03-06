@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const GerenciadorVeiculos_1 = require("./classes/GerenciadorVeiculos");
 const EstoqueVeiculos_1 = require("./classes/EstoqueVeiculos");
 const FiltroVeiculos_1 = require("./utils/FiltroVeiculos");
+const RelatorioVeiculos_1 = require("./utils/RelatorioVeiculos");
 const estoque = new EstoqueVeiculos_1.EstoqueVeiculos();
 const meuCarro = {
     marca: "Toyota",
@@ -74,3 +75,6 @@ const hondaVeiculos = (0, FiltroVeiculos_1.filtrarPorMarca)(veiculos, "Honda");
 console.log("Veículos da Honda:", hondaVeiculos);
 const corollaVeiculos = (0, FiltroVeiculos_1.filtrarPorModelo)(veiculos, "Corolla");
 console.log("Veículos modelo Corolla:", corollaVeiculos);
+//exercicio 4
+const relatorio = (0, RelatorioVeiculos_1.gerarRelatorio)(veiculos);
+console.log(relatorio);
